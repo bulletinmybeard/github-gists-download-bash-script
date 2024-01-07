@@ -25,6 +25,7 @@ or updates gists in a local directory based on their update status.
 * `<username>`: Your GitHub username
 * `<bearer_token>`: Your GitHub API token
 
+
 ```bash
 ./download_gists.sh bulletinmybeard **********
 
