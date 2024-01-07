@@ -132,13 +132,13 @@ fetch_paginated_gists() {
 
             # Download the file if the local copy is older
             if [ "$local_updated_at_int" -lt "$updated_at_int" ]; then
-                echo "Updating $file_path as it is older than the remote version."
+                echo "Updating '$file_path' as it is older than the remote version."
                 curl -sS -o "$file_path" "$url"
             else
-                echo "$file_path is up to date."
+                echo "'$file_path' is up to date."
             fi
         else
-            echo "Downloading new file: $file_path"
+            echo "Downloading new file: '$file_path'"
             curl -sS -o "$file_path" "$url"
         fi
     done
